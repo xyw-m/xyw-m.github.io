@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.7.7">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="http://example.com/"/>
+  
+  <link rel="canonical" href="http://example.com/2023/05/03/vue-nexttick/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -31,18 +31,23 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>xyw的小站</title>
-  <meta name="keywords" content="">
-  <meta desc name="description" content="xyw的个人技术博客 - John Doe - xyw的小站">
+  <title>Vue中的$nextTick有什么作用？ - xyw的小站</title>
+  <meta name="keywords" content="Vue,null">
+  <meta desc name="description" content="首先明确一个事实：Vue在更新DOM时是异步执行的。Vue官网在深入响应式原理一节中是这么描述异步更新队列的：
+
+当侦听到数据变化，Vue将开启一个队列，并缓冲在同一事件循环中发生的所有数据变更。如果同一个watcher被多次触发，只会被推入到队列中一次。这种在缓冲时去除重复数据对于避免不必要的计算和DOM操作是... - John Doe - xyw的小站">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="xyw的小站">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue中的$nextTick有什么作用？">
+<meta property="og:url" content="http://example.com/2023/05/03/Vue-nextTick/index.html">
 <meta property="og:site_name" content="xyw的小站">
-<meta property="og:description" content="xyw的个人技术博客">
+<meta property="og:description" content="首先明确一个事实：Vue在更新DOM时是异步执行的。Vue官网在深入响应式原理一节中是这么描述异步更新队列的：  当侦听到数据变化，Vue将开启一个队列，并缓冲在同一事件循环中发生的所有数据变更。如果同一个watcher被多次触发，只会被推入到队列中一次。这种在缓冲时去除重复数据对于避免不必要的计算和DOM操作是非常重要的。 然后，在下一个事件循环”tick”中，Vue刷新队列并执行实际(已去重的">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2023-05-03T02:43:43.000Z">
+<meta property="article:modified_time" content="2023-05-03T08:59:12.514Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Vue">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2164,7 +2169,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2365,7 +2370,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="full" class='cover-wrapper  dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://raw.githubusercontent.com/xyw-m/imgForPicGo/main/202305031030591.jpg"></div>
 
@@ -2418,7 +2423,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </div>
 </div>
 
-        <div id="scroll-down" style="display: ;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+        <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
       </div>
     
   
@@ -2428,98 +2433,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/03/JavaScript-runtime-and-event-loop/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="xyw的小站">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="xyw的小站">
-    <meta itemprop="description" content="xyw的个人技术博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/03/JavaScript-runtime-and-event-loop/"  itemprop="url">
-        JavaScript运行时及事件循环
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>先放个人总结，下文会详细解释：</p>
-<p>JavaScript运行时维护了一组代理，每个代理包括：</p>
-<p>一组执行上下文集合、执行上下文栈、主线程、worker额外线程、(宏)任务队列、微任务队列。</p>
-<p>每个代理由事件循环驱动：</p>
-<ul>
-<li>在一轮事件循环中，依次执行任务队列中的每一个任务，创建对应的执行上下文，压入执行栈执行。</li>
-<li>期间如果遇到微任务，只将其添加到微任务队列，然后继续执行任务队列中的任务。</li>
-<li>当任务队列中的任务执行完毕，执行栈为空时，依次执行微任务队列中的每一个微任务，直到微任务队列为空，允许微任务添加微任务。</li>
-<li>当所有微任务都被执行完毕后，本轮事件循环结束。</li>
-<li>下一轮事件循环开启，循环往复。</li>
-</ul>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-05-03T16:22:25+08:00">2023-05-03</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">前端</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/05/03/JavaScript-runtime-and-event-loop/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/03/Vue-nextTick/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="xyw的小站">
@@ -2529,65 +2443,294 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="xyw的个人技术博客">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/03/Vue-nextTick/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         Vue中的$nextTick有什么作用？
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
     
-      <p>首先明确一个事实：Vue在更新DOM时是异步执行的。Vue官网在<a target="_blank" rel="noopener" href="https://v2.cn.vuejs.org/v2/guide/reactivity.html">深入响应式原理</a>一节中是这么描述异步更新队列的：</p>
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">前端</span></a>
+      </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-05-03T10:43:43+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：May 3, 2023</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>首先明确一个事实：Vue在更新DOM时是异步执行的。Vue官网在<a target="_blank" rel="noopener" href="https://v2.cn.vuejs.org/v2/guide/reactivity.html">深入响应式原理</a>一节中是这么描述异步更新队列的：</p>
 <blockquote>
 <p>当侦听到数据变化，Vue将开启一个队列，并缓冲在同一事件循环中发生的所有数据变更。如果同一个watcher被多次触发，只会被推入到队列中一次。这种在缓冲时去除重复数据对于避免不必要的计算和DOM操作是非常重要的。</p>
 <p>然后，在下一个事件循环”tick”中，Vue刷新队列并执行实际(已去重的)工作。</p>
 <p>Vue在内部对异步队列尝试使用原生的<code>Promise.then</code>、<code>MutationObserver</code>和<code>setImmediate</code>，如果执行环境不支持，则会采用<code>setTimeout(fn, 0)</code>代替。</p>
 </blockquote>
-    
+<span id="more"></span>
+
+<p>也就是说，当我们设置<code>this.msg = &#39;hello world&#39;</code>的时候，DOM节点的文本(可以简单的理解为<code>Node.textContent</code>)并没有立即更新，而是将这个操作放进一个队列里。如果我们重复执行的话，队列还会进行去重操作。等到同一事件循环中的所有数据完成变化之后，再逐一处理队列中的事件。</p>
+<p>那么如果我们想在上述的赋值操作后立即操作DOM呢？比如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="attr">methods</span>: &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">msg</span> = <span class="string">&#x27;hello world&#x27;</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">$el</span>.<span class="property">textContent</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这时候就需要用到<code>Vue.nextTick(callback)</code>了。</p>
+<h2 id="1-nextTick是什么？"><a href="#1-nextTick是什么？" class="headerlink" title="1.$nextTick是什么？"></a>1.$nextTick是什么？</h2><p>先来看一下Vue官方对nextTick的定义(此处摘录的是Vue3官方文档的定义)：</p>
+<blockquote>
+<p>当你在Vue中更改响应式状态时，最终的DOM更新并不是同步生效的，而是由Vue将它们缓存在一个队列中，直到下一次”tick”才一起执行。这样使为了确保每个组件无论发生多少状态改变，都仅执行一次更新。</p>
+<p><code>nextTick()</code>可以在状态改变后立即使用，以等待DOM更新完成。</p>
+</blockquote>
+<p>如上文所述，修改响应式数据后，Vue将开启一个异步更新队列，视图需要等待队列中所有数据变化完成后，再统一进行更新。</p>
+<p>即只有在<code>nextTick()</code>的回调函数中，才能稳定获取到更新后的DOM结构。</p>
+<h2 id="2-如何使用-nextTick"><a href="#2-如何使用-nextTick" class="headerlink" title="2.如何使用$nextTick"></a>2.如何使用$nextTick</h2><p>该函数有两个参数，第一个参数是回调函数，第二个参数是执行函数上下文。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 修改数据</span></span><br><span class="line">vm.<span class="property">message</span> = <span class="string">&#x27;修改后的值&#x27;</span></span><br><span class="line"><span class="comment">// 此时DOM还未更新</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(vm.<span class="property">$el</span>.<span class="property">textContent</span>)	<span class="comment">// 原始值</span></span><br><span class="line"><span class="title class_">Vue</span>.<span class="title function_">nextTick</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="comment">// DOM已更新</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(vm.<span class="property">$el</span>.<span class="property">textContent</span>)	<span class="comment">// 修改后的值</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>组件内使用<code>vm.$nextTick()</code>实例方法只需要通过<code>this.$nextTick()</code>，并且回调函数中的<code>this</code>将自动绑定到当前的Vue实例上。</p>
+<p>此外，<code>$nextTick()</code>会返回一个<code>Promise</code>对象，所以也可以用<code>async/await</code>。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">this</span>.<span class="property">message</span> = <span class="string">&#x27;修改后的值&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">$el</span>.<span class="property">textContent</span>)	<span class="comment">// 原始值</span></span><br><span class="line"><span class="keyword">await</span> <span class="variable language_">this</span>.$nextTick()</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">$el</span>.<span class="property">textContent</span>)	<span class="comment">// 修改后的值</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-进阶：实现原理"><a href="#3-进阶：实现原理" class="headerlink" title="3.进阶：实现原理"></a>3.进阶：实现原理</h2><p>我们可以根据nextTick的源码分析该函数的实现原理，源码位于：<a target="_blank" rel="noopener" href="https://github.com/vuejs/vue/blob/main/src/core/util/next-tick.ts">&#x2F;src&#x2F;core&#x2F;util&#x2F;next-tick.ts</a></p>
+<p>首先是nextTick部分(省略了一些不必要的代码)：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">let</span> isUsingMicroTask = <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="attr">callbacks</span>:<span class="title class_">Array</span>&lt;<span class="title class_">Function</span>&gt; = []		<span class="comment">// 回调函数队列</span></span><br><span class="line"><span class="keyword">let</span> pending = <span class="literal">false</span>		<span class="comment">// 用来标识同一个时间内只能执行一次</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">nextTick</span>(<span class="params">cb?:(...args: any[]) =&gt; any, ctx?: <span class="built_in">Object</span></span>)&#123;</span><br><span class="line">  <span class="keyword">let</span> _resolve</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// 调用nextTick会将传入的cb回调函数(绑定执行上下文后)存入callbacks数组</span></span><br><span class="line">  callbacks.<span class="title function_">push</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span>(cb)&#123;</span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">        cb.<span class="title function_">call</span>(ctx)</span><br><span class="line">      &#125; <span class="keyword">catch</span>(<span class="attr">e</span>:any)&#123;</span><br><span class="line">        <span class="title function_">handleError</span>(e, ctx, <span class="string">&#x27;nextTick&#x27;</span>)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span>(_resolve)&#123;</span><br><span class="line">      <span class="title function_">_resolve</span>(ctx)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// 执行异步延迟函数 timerFunc</span></span><br><span class="line">  <span class="keyword">if</span>(!pending)&#123;</span><br><span class="line">    pending = <span class="literal">true</span></span><br><span class="line">    <span class="title function_">timerFunc</span>()</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// 当nextTick没有传入回调函数时，返回promise</span></span><br><span class="line">  <span class="keyword">if</span>(!cb &amp;&amp; <span class="keyword">typeof</span> <span class="title class_">Promise</span> !== <span class="string">&#x27;undefined&#x27;</span>)&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Promise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> &#123;</span><br><span class="line">      _resolve = resolve</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后是timerFunc部分：<code>timerFunc</code>只是将<code>flushCallBacks</code>添加进微任务队列(或宏任务队列)，同一事件循环内只会执行一次。</p>
+<p><code>timerFunc</code>会根据当前环境支持什么异步方法来确定调用哪个。优先级分别为：<code>Promise.then</code> &gt; <code>MutationObserver</code> &gt; <code>setImmediate</code> &gt; <code>setTimeout</code>。</p>
+<p>此处贴一段timerFunc的注释(个人翻译版)：</p>
+<blockquote>
+<p>此处我们使用微任务(microtasks)进行异步延迟封装。在2.5，我们本来使用了(宏)任务结合微任务的方式，然而，当状态(这里应该指的是响应式数据)正好在重绘前改变时，会产生一些微妙的问题，例如#6813, out-in transitions。</p>
+<p>此外，在事件处理器中使用(宏)任务将导致一些无法回避的奇怪行为，例如#7109, #7153, #7546, #7834, #8109。</p>
+<p>因此，我们现在到处使用微任务。</p>
+<p>这种权衡带来的一个主要的缺点是：在某些场景下，微任务的优先级太高，并在所谓的连续事件之间(例如#4521，#6690，它们有变通方法)，甚至在同一事件冒泡之间触发(#6566)。</p>
+<p>nextTick行为利用了可访问的微任务队列，原生Promise.then和MutationObserver都可以被添加到为任务队列。MutationObserver有更广泛的支持，但是它在UIWebView中有严重的漏洞：在iOS &gt;&#x3D; 9.3.3时触发触摸事件处理程序。它在触发几次后完全停止工作….所以只要原生Promise可用，我们就会使用它。</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> timerFunc</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">typeof</span> <span class="title class_">Promise</span> !== <span class="string">&#x27;undefined&#x27;</span> &amp;&amp; <span class="title function_">isNative</span>(<span class="title class_">Promise</span>))&#123;</span><br><span class="line">  <span class="comment">// Promise.resolve()相当于直接返回了一个已经resolve的promise对象</span></span><br><span class="line">  <span class="comment">// 此处的操作只是为了将flushCallBacks添加进微任务队列</span></span><br><span class="line">  <span class="comment">// flushCallBacks将会依次调用队列中的回调函数，详见下文</span></span><br><span class="line">  <span class="keyword">const</span> p = <span class="title class_">Promise</span>.<span class="title function_">resolve</span>()</span><br><span class="line">  timerFunc = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    p.<span class="title function_">then</span>(flushCallbacks)</span><br><span class="line">    <span class="keyword">if</span>(isIOS) <span class="built_in">setTimeout</span>(noop)</span><br><span class="line">  &#125;</span><br><span class="line">  isUsingMicroTask = <span class="literal">true</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span>(</span><br><span class="line">  !isIE &amp;&amp;</span><br><span class="line"> 	<span class="keyword">typeof</span> <span class="title class_">MutationObserver</span> !== <span class="string">&#x27;undefined&#x27;</span> &amp;&amp;</span><br><span class="line">  (<span class="title function_">isNative</span>(<span class="title class_">MutationObserver</span>) || </span><br><span class="line">  <span class="title class_">MutationObserver</span>.<span class="title function_">toString</span>() === <span class="string">&#x27;[object MutationObserverConstructor]&#x27;</span>)</span><br><span class="line">)&#123;</span><br><span class="line">  <span class="comment">// Use MutationObserver where native Promise is not available</span></span><br><span class="line">  <span class="comment">// MutationObserver 会在指定的DOM发生变化时被调用</span></span><br><span class="line">  <span class="comment">// 此处创建了一个文本节点并使用MutationObserver来监视它</span></span><br><span class="line">  <span class="comment">// 然后手动更改文本，从而触发MutationObserver回调函数</span></span><br><span class="line">  <span class="comment">// 这些操作也是为了利用MutationObserver将flushCallbacks添加进微任务队列</span></span><br><span class="line">  <span class="keyword">let</span> counter = <span class="number">1</span></span><br><span class="line">  <span class="keyword">const</span> observer = <span class="keyword">new</span> <span class="title class_">MutationObserver</span>(flushCallbacks)</span><br><span class="line">  <span class="keyword">const</span> textNode = <span class="variable language_">document</span>.<span class="title function_">createTextNode</span>(<span class="title class_">String</span>(counter))</span><br><span class="line">  observer.<span class="title function_">observe</span>(textNode, &#123;<span class="attr">characterData</span>: <span class="literal">true</span>&#125;)</span><br><span class="line">  timerFunc = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    counter = (counter + <span class="number">1</span>) % <span class="number">2</span></span><br><span class="line">    textNode.<span class="property">data</span> = <span class="title class_">String</span>(counter)</span><br><span class="line">  &#125;</span><br><span class="line">  isUsingMicroTask = <span class="literal">true</span></span><br><span class="line">&#125; esle <span class="keyword">if</span>(<span class="keyword">typeof</span> setImmediate !== <span class="string">&#x27;undefined&#x27;</span> &amp;&amp; <span class="title function_">isNative</span>(setImmediate))&#123;</span><br><span class="line">  <span class="comment">// 当前环境不支持原生Promise和MutationObserver，也就不能利用微任务队列</span></span><br><span class="line">  timerFunc = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="title function_">setImmediate</span>(flushCallbacks)</span><br><span class="line">  &#125;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="comment">// 当前环境不支持原生Promise和MutationObserver，也就不能利用微任务队列</span></span><br><span class="line">  timerFunc = <span class="function">() =&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">setTimeout</span>(flushCallbacks, <span class="number">0</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>最后是flushCallbacks：所有回调函数都会在<code>flushCallbacks()</code>中被依次调用，然后<code>callbacks</code>置空，<code>pending</code>重置为false。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">flushCallbacks</span>(<span class="params"></span>)&#123;</span><br><span class="line">  pending = <span class="literal">false</span></span><br><span class="line">  <span class="keyword">const</span> copies = callbacks.<span class="title function_">slice</span>(<span class="number">0</span>)</span><br><span class="line">  callbacks.<span class="property">length</span> = <span class="number">0</span></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; copies.<span class="property">length</span>; i++)&#123;</span><br><span class="line">    copies[i]()</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>总结一下：</p>
+<p>nextTick内部维护了一个<code>callbacks</code>队列、一个<code>pending</code>锁、一个<code>timerFunc</code>和一个<code>flushCallbacks</code>。</p>
+<ul>
+<li><p><code>callbacks</code>队列：收集当前事件循环内所有的<code>nextTick</code>回调，等当前队列的宏任务执行完毕后，在<code>flushCallbacks</code>里一次性执行完所有回调函数</p>
+</li>
+<li><p><code>timerFunc</code>根据浏览器环境将<code>flushCallbacks</code>添加进微任务(当前事件循环内执行)或宏任务(下一轮事件循环执行)</p>
+</li>
+<li><p><code>pending</code>：保证不会重复创建<code>timeFunc</code>。当<code>pending</code>为<code>false</code>时，表示当前事件循环内首次将cb添加到<code>callbacks</code>队列，此时会创建<code>timeFunc</code>，并加锁。后续调用<code>nextTick</code>只会往<code>callbacks</code>队列添加回调。</p>
+</li>
+</ul>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://github.com/febobo/web-interview/issues/14">面试官：Vue中的$nextTick有什么作用？</a></li>
+<li><a target="_blank" rel="noopener" href="https://cn.vuejs.org/api/general.html#nexttick">vm.$nextTick - Vue3</a></li>
+<li><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve">Promise.resolve() - MDN</a></li>
+<li><a target="_blank" rel="noopener" href="https://v2.cn.vuejs.org/v2/guide/reactivity.html#%E5%BC%82%E6%AD%A5%E6%9B%B4%E6%96%B0%E9%98%9F%E5%88%97">深入响应式原理 - Vue2</a></li>
+<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904147804749832">Vue中$nextTick源码解析 - 掘金</a></li>
+</ol>
+
   </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-05-03T10:43:43+08:00">2023-05-03</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">前端</span></a>
-            </span>
-          
-        
-      </div>
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2023/05/03/Vue-nextTick/' itemprop="url">
-            Read More
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-05-03T16:59:12+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：May 3, 2023</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Vue/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Vue</p></a></div>
+  <span hidden itemprop="keywords">Vue</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/05/03/Vue-nextTick/&title=Vue中的$nextTick有什么作用？ - xyw的小站&summary=首先明确一个事实：Vue在更新DOM时是异步执行的。Vue官网在深入响应式原理一节中是这么描述异步更新队列的：
+
+当侦听到数据变化，Vue将开启一个队列，并缓冲在同一事件循环中发生的所有数据变更。如果同一个watcher被多次触发，只会被推入到队列中一次。这种在缓冲时去除重复数据对于避免不必要的计算和DOM操作是非常重要的。
+然后，在下一个事件循环”tick”中，Vue刷新队列并执行实际(已去重的)工作。
+Vue在内部对异步队列尝试使用原生的Promise.then、MutationObserver和setImmediate，如果执行环境不支持，则会采用setTimeout(fn, 0)代替。
+"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/05/03/Vue-nextTick/&title=Vue中的$nextTick有什么作用？ - xyw的小站&summary=首先明确一个事实：Vue在更新DOM时是异步执行的。Vue官网在深入响应式原理一节中是这么描述异步更新队列的：
+
+当侦听到数据变化，Vue将开启一个队列，并缓冲在同一事件循环中发生的所有数据变更。如果同一个watcher被多次触发，只会被推入到队列中一次。这种在缓冲时去除重复数据对于避免不必要的计算和DOM操作是非常重要的。
+然后，在下一个事件循环”tick”中，Vue刷新队列并执行实际(已去重的)工作。
+Vue在内部对异步队列尝试使用原生的Promise.then、MutationObserver和setImmediate，如果执行环境不支持，则会采用setTimeout(fn, 0)代替。
+"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/05/03/Vue-nextTick/&title=Vue中的$nextTick有什么作用？ - xyw的小站&summary=首先明确一个事实：Vue在更新DOM时是异步执行的。Vue官网在深入响应式原理一节中是这么描述异步更新队列的：
+
+当侦听到数据变化，Vue将开启一个队列，并缓冲在同一事件循环中发生的所有数据变更。如果同一个watcher被多次触发，只会被推入到队列中一次。这种在缓冲时去除重复数据对于避免不必要的计算和DOM操作是非常重要的。
+然后，在下一个事件循环”tick”中，Vue刷新队列并执行实际(已去重的)工作。
+Vue在内部对异步队列尝试使用原生的Promise.then、MutationObserver和setImmediate，如果执行环境不支持，则会采用setTimeout(fn, 0)代替。
+"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2023/05/03/JavaScript-runtime-and-event-loop/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>JavaScript运行时及事件循环</p>
+          <p class='content'>先放个人总结，下文会详细解释：
+JavaScript运行时维护了一组代理，每个代理包括：
+一组执行上下文集合、执行上下文栈、主线程、worker额外线程、(宏)任务队列、微任务队列。
+每个代理由...</p>
+        </a>
+      
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2023/05/03/Vue-nextTick/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
 
 
 </div>
@@ -2598,134 +2741,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='https://raw.githubusercontent.com/xyw-m/imgForPicGo/main/202305031010515.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-          <p>生活需要长远的清醒。</p>
-
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/1043545633@qq.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/xyw-m"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%89%8D%E7%AB%AF/" href="/categories/%E5%89%8D%E7%AB%AF/"
-            active-action="action-categoriesE5898DE7ABAF"
-            ><div class='name'>前端</div><div class='badge'>(2)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/JavaScript/" style="font-size: 14px; color: #999">JavaScript</a> <a href="/tags/Vue/" style="font-size: 14px; color: #999">Vue</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-nextTick%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">1.$nextTick是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-nextTick"><span class="toc-text">2.如何使用$nextTick</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E8%BF%9B%E9%98%B6%EF%BC%9A%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="toc-text">3.进阶：实现原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-text">参考资料</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2760,7 +2817,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2769,15 +2826,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="full";
-      cover_wrapper.style.display="";
-      scroll_down.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
+      scroll_down.style.display="none";
     
   
 </script>
@@ -3274,7 +3331,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"xyw的小站","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"xyw的个人技术博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"xyw的小站"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"xyw的小站","url":"http://example.com/","keywords":null,"description":"xyw的个人技术博客","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"xyw的个人技术博客"},"publisher":{"@type":"Organization","name":"xyw的小站","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"xyw的个人技术博客","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"xyw的小站","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"xyw的小站","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"xyw的个人技术博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"xyw的小站"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/前端/","name":"前端"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/05/03/Vue-nextTick/","name":"Vue中的$nextTick有什么作用？"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"xyw的小站","url":"http://example.com/","keywords":null,"description":"xyw的个人技术博客","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"xyw的个人技术博客"},"publisher":{"@type":"Organization","name":"xyw的小站","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Vue中的$nextTick有什么作用？","description":"首先明确一个事实：Vue在更新DOM时是异步执行的。Vue官网在深入响应式原理一节中是这么描述异步更新队列的：\n\n当侦听到数据变化，Vue将开启一个队列，并缓冲在同一事件循环中发生的所有数据变更。如果同一个watcher被多次触发，只会被推入到队列中一次。这种在缓冲时去除重复数据对于避免不必要的计算和DOM操作是非常重要的。\n然后，在下一个事件循环”tick”中，Vue刷新队列并执行实际(已去重的)工作。\nVue在内部对异步队列尝试使用原生的Promise.then、MutationObserver和setImmediate，如果执行环境不支持，则会采用setTimeout(fn, 0)代替。\n","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/05/03/Vue-nextTick/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"xyw的小站","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/05/03/Vue-nextTick/","wordCount":301,"datePublished":"2023-05-03T02:43:43.000Z","dateModified":"2023-05-03T08:59:12.514Z","articleSection":"前端","keywords":"Vue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
