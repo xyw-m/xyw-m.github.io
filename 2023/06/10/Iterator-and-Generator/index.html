@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.7.7">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/categories/前端/"/>
+  
+  <link rel="canonical" href="http://example.com/2023/06/10/iterator-and-generator/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -31,18 +31,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Category: 前端 - xyw的小站</title>
-  <meta name="keywords" content="null">
-  <meta desc name="description" content="xyw的个人技术博客 - John Doe - xyw的小站">
+  <title>迭代器与生成器 - xyw的小站</title>
+  <meta name="keywords" content="JavaScript,null">
+  <meta desc name="description" content="JavaScript表示“集合”的数据结构有：Array、Object、Map和Set(后两者是ES6新增的)，因此需要一种统一的接口机制，来处理所有不同的数据结构。 - John Doe - xyw的小站">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="xyw的小站">
-<meta property="og:url" content="http://example.com/categories/%E5%89%8D%E7%AB%AF/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="迭代器与生成器">
+<meta property="og:url" content="http://example.com/2023/06/10/Iterator-and-Generator/index.html">
 <meta property="og:site_name" content="xyw的小站">
-<meta property="og:description" content="xyw的个人技术博客">
+<meta property="og:description" content="JavaScript表示“集合”的数据结构有：Array、Object、Map和Set(后两者是ES6新增的)，因此需要一种统一的接口机制，来处理所有不同的数据结构。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2023-06-10T08:22:25.000Z">
+<meta property="article:modified_time" content="2023-09-12T13:19:09.842Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2365,7 +2368,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://raw.githubusercontent.com/xyw-m/imgForPicGo/main/202305031030591.jpg"></div>
 
@@ -2427,92 +2430,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/04/Vue-reactivity/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="xyw的小站">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="xyw的小站">
-    <meta itemprop="description" content="xyw的个人技术博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/07/04/Vue-reactivity/"  itemprop="url">
-        Vue的响应式原理
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>首先来探讨一下这个问题，什么是响应性？</p>
-<p>响应性这个术语在今天的各种编程讨论中经常出现，Vue3官网在<a target="_blank" rel="noopener" href="https://cn.vuejs.org/guide/extras/reactivity-in-depth.html">深入响应式系统</a>一节中对它的解释如下：</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-07-04T13:50:15+08:00">2023-07-04</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">前端</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/07/04/Vue-reactivity/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/10/Iterator-and-Generator/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="xyw的小站">
@@ -2522,201 +2441,361 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="xyw的个人技术博客">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/06/10/Iterator-and-Generator/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         迭代器与生成器
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>JavaScript表示“集合”的数据结构有：<code>Array</code>、<code>Object</code>、<code>Map</code>和<code>Set</code>(后两者是ES6新增的)，因此需要一种统一的接口机制，来处理所有不同的数据结构。</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+      </h1>
+      <div class='new-meta-box'>
         
-        <time itemprop="dateCreated datePublished" datetime="2023-06-10T16:22:25+08:00">2023-06-10</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
           
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">前端</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/06/10/Iterator-and-Generator/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
 </div>
 
-          </div>
+          
         
-      
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">前端</span></a>
+      </span>
+    
+  </div>
+
+
+          
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/08/JavaScript-runtime-and-event-loop/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="xyw的小站">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="xyw的小站">
-    <meta itemprop="description" content="xyw的个人技术博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-06-10T16:22:25+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Jun 10, 2023</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/08/JavaScript-runtime-and-event-loop/"  itemprop="url">
-        JavaScript运行时及事件循环
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>先放个人总结，下文会详细解释：</p>
-<p>JavaScript运行时维护了一组代理，每个代理包括：</p>
-<p>一组执行上下文集合、执行上下文栈、主线程、worker额外线程、(宏)任务队列、微任务队列。</p>
-<p>每个代理由事件循环驱动：</p>
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>JavaScript表示“集合”的数据结构有：<code>Array</code>、<code>Object</code>、<code>Map</code>和<code>Set</code>(后两者是ES6新增的)，因此需要一种统一的接口机制，来处理所有不同的数据结构。</p>
+<span id="more"></span>
+
+<h2 id="1-Iterator与for…of"><a href="#1-Iterator与for…of" class="headerlink" title="1. Iterator与for…of"></a>1. Iterator与for…of</h2><h3 id="Iterator接口"><a href="#Iterator接口" class="headerlink" title="Iterator接口"></a>Iterator接口</h3><p>遍历器(Iterator)因此应运而生，它作为接口，为各种不同的数据结构提供统一的访问机制(即<code>for...of</code>循环，详见下文)。Iterator的遍历过程(或者说是规范)是这样的：</p>
+<ol>
+<li>创建一个指针对象，指向当前数据结构的起始位置。其实遍历器对象本质上，就是一个指针对象。</li>
+<li>第一次调用指针对象的<code>next</code>方法，将指针指向数据结构的第<strong>一</strong>个成员</li>
+<li>第二次调用指针对象的<code>next</code>方法，指针指向数据结构的第<strong>二</strong>个成员</li>
+<li>以此类推，不断调用<code>next</code>方法，直到它指向数据结构的结束位置</li>
+</ol>
+<p>每一次调用<code>next</code>方法，都会返回数据结构的当前成员的信息。具体来说，就是返回一个包含<code>value</code>和<code>done</code>两个属性的对象。其中，<code>value</code>属性是当前成员的值，<code>done</code>属性是一个布尔值，表示遍历是否结束。</p>
+<p>ES6规定，默认的<code>Iterator</code>接口部署在数据结构的<code>Symbol.iterator</code>属性上，一个数据结构只要具有<code>Symbol.iterator</code>属性，就认为是”可遍历的”(iterable)。<code>Symbol.iterator</code>属性本身是一个函数，即当前数据结构默认的遍历器生成函数。执行这个函数，就会返回一个遍历器(简单来说，就是一个具有<code>next()</code>方法的对象)。</p>
+<p>ES6中原生具备<code>Iterator</code>接口的数据结构有：<code>Array</code>、<code>Map</code>、<code>Set</code>、<code>String</code>、<code>TypedArray</code>(描述了底层二进制数据缓冲区的类数组对象)、函数的<code>arguments</code>对象和<code>NodeList</code>对象。</p>
+<p>正常情况下，即使已经有了原生<code>Iterator</code>接口，也需要(一遍遍地)手动调用<code>next()</code>方法来遍历数据结构，这实在是太麻烦了。所以ES6新增了一种遍历命令<code>for...of</code>，当使用<code>for...of</code>循环遍历某种数据结构时，该循环会自动去寻找<code>Iterator</code>接口，也就是说，不用再自己手动调用<code>next()</code>方法了！</p>
+<h3 id="其他用法"><a href="#其他用法" class="headerlink" title="其他用法"></a>其他用法</h3><p>那么，除了为<code>for...of</code>循环服务之外，<code>Iterator</code>接口还有别的用处吗？或者说，还有别的场合会调用<code>Iterator</code>接口吗？其实是有的：</p>
+<ol>
+<li>解构赋值：对数组和<code>Set</code>解构进行解构赋值时，会默认调用<code>Iterator</code>接口</li>
+<li>扩展运算符(…)</li>
+<li><code>yield*</code></li>
+<li>任何接受数组作为参数的场合，比如：<code>Array.from()</code>、<code>Map()</code>、<code>Promise.all()</code>等等</li>
+</ol>
+<p>这样看来，原生具有<code>Iterator</code>接口的数据结构，可以很方便的进行遍历和进一步的操作。但是，如果想遍历原生不具备<code>Iterator</code>接口的数据结构呢？比如想用<code>for...of</code>遍历对象，那就只能手动在<code>Symbol.iterator</code>属性上部署遍历器生成方法(原型链上的对象具有该方法也可)，如下所示：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">RangeIterator</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">start, stop</span>)&#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">value</span> = start</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">end</span> = stop</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  [<span class="title class_">Symbol</span>.<span class="property">iterator</span>]()&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="variable language_">this</span></span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="title function_">next</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="keyword">const</span> value = <span class="variable language_">this</span>.<span class="property">value</span></span><br><span class="line">    <span class="keyword">if</span>(value &lt; <span class="variable language_">this</span>.<span class="property">stop</span>)&#123;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">value</span>++</span><br><span class="line">      <span class="keyword">return</span> &#123; <span class="attr">value</span>: value, <span class="attr">done</span>: <span class="literal">false</span> &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> &#123; <span class="attr">value</span>: <span class="literal">undefined</span>, <span class="attr">done</span>: <span class="literal">true</span> &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> value <span class="keyword">of</span> <span class="keyword">new</span> <span class="title class_">RangeIterator</span>(<span class="number">0</span>, <span class="number">3</span>))&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(value)	<span class="comment">// 0, 1, 2</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这里还有一个取巧的法子，为类似数组的对象(存在数值键名和<code>length</code>属性)部署<code>Iterator</code>接口，可以直接使用数组的<code>Iterator</code>接口。</p>
+<h3 id="生成器的妙用"><a href="#生成器的妙用" class="headerlink" title="生成器的妙用"></a>生成器的妙用</h3><p>除了上述的特例外，手动部署<code>Iterator</code>接口过于繁琐，因此ES6同时新增了生成器(Generator)，用于自定义遍历器和实现协程。</p>
+<p>上边那个例子使用生成器可以改写成这样，极大地简化了手动部署<code>Iterator</code>接口的操作！</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">RangeIterator</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">start, stop</span>)&#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">value</span> = start</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">end</span> = stop</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  *[<span class="title class_">Symbol</span>.<span class="property">iterator</span>]()&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="variable language_">this</span>.<span class="property">value</span>; i &lt; <span class="variable language_">this</span>.<span class="property">stop</span>; i++)&#123;</span><br><span class="line">      <span class="keyword">yield</span> i</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> value <span class="keyword">of</span> <span class="keyword">new</span> <span class="title class_">RangeIterator</span>(<span class="number">0</span>, <span class="number">3</span>))&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(value)	<span class="comment">// 0, 1, 2</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>下面我们会详细介绍一下生成器Generator。</p>
+<h2 id="2-Generator函数"><a href="#2-Generator函数" class="headerlink" title="2. Generator函数"></a>2. Generator函数</h2><p>从语法上来理解，Generator函数是一个状态机，封装了多个内部状态。此外，它还是一个遍历器生成函数，执行它会返回一个遍历器对象。(还记得吗，可迭代数据结构的<code>Symbol.iterator</code>属性也是一个遍历器生成函数)</p>
+<p>从形式上来说，Generator函数是一个普通函数，但有两点不同：</p>
+<ol>
+<li><code>function</code>关键字与函数名之间有一个星号<code>*</code></li>
+<li>使用<code>yield</code><strong>表达式</strong>，定义不同的内部状态</li>
+</ol>
+<p>运行Generator函数会返回一个指向内部状态的指针对象，也就是前面介绍过的遍历器对象。遍历器对象的<code>next</code>方法的运行逻辑如下：</p>
+<ol>
+<li>遇到<code>yield</code>表达式，暂停执行后面的操作，并将紧跟在<code>yield</code>后面那个表达式的值，作为返回的对象的<code>value</code>属性值</li>
+<li>下一次调用<code>next</code>方法时，再继续往下执行，直到遇到下一个<code>yield</code>表达式</li>
+<li>如果没有再遇到新的<code>yield</code>表达式，就一直运行到函数结束，直到<code>return</code>语句为止，并将<code>return</code>语句后面的表达式，作为返回的对象的<code>value</code>属性值</li>
+<li>如果该函数没有<code>return</code>语句，则返回的对象的<code>value</code>属性值为<code>undefined</code></li>
+</ol>
+<p>注意：<code>yield</code>表达式后面的表达式，只有当调用<code>next</code>方法，内部指针指向该语句时才会执行。</p>
+<h3 id="自定义Iterator接口"><a href="#自定义Iterator接口" class="headerlink" title="自定义Iterator接口"></a>自定义<code>Iterator</code>接口</h3><p>Generator函数的典型应用场景就是可以在任意对象上轻松部署<code>Iterator</code>接口，然后对象就可以被<code>for...of</code>命令迭代了！</p>
+<p>除此之外，因为脚本遇到<code>yield</code>就暂行执行，这意味着Generator函数可以作为一种异步解决方案，把异步操作写在<code>yield</code>表达式里面，等到后续调用<code>next()</code>方法时再往后执行，这实际上等同于不需要写回调函数了，<code>yield</code>表达式后面的操作就等同于回调函数。</p>
+<p>更进一步讲，如果有一个多步操作非常耗时，采用回调函数，可能会导致著名的“回调函数地狱”。即使用Promise改写，代码的语义也很不清楚。而Generator函数可以进一步改善代码的运行流程，如下所示：</p>
+<p>(注意，这种做法只适合同步操作，因为这里的代码一得到返回值，就继续往下执行，没有判断异步操作何时完成。异步操作流程详见下文)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 回调函数地狱 */</span></span><br><span class="line"><span class="title function_">step1</span>(<span class="keyword">function</span> (<span class="params">value1</span>) &#123;</span><br><span class="line">  <span class="title function_">step2</span>(value1, <span class="keyword">function</span>(<span class="params">value2</span>) &#123;</span><br><span class="line">    <span class="title function_">step3</span>(value2, <span class="keyword">function</span>(<span class="params">value3</span>) &#123;</span><br><span class="line">      <span class="title function_">step4</span>(value3, <span class="keyword">function</span>(<span class="params">value4</span>) &#123;</span><br><span class="line">        <span class="comment">// Do something with value4</span></span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Promise改写 */</span></span><br><span class="line"><span class="title class_">Promise</span>.<span class="title function_">resolve</span>(step1)</span><br><span class="line">  .<span class="title function_">then</span>(step2)</span><br><span class="line">  .<span class="title function_">then</span>(step3)</span><br><span class="line">  .<span class="title function_">then</span>(step4)</span><br><span class="line">  .<span class="title function_">then</span>(<span class="keyword">function</span> (<span class="params">value4</span>) &#123;</span><br><span class="line">    <span class="comment">// Do something with value4</span></span><br><span class="line">  &#125;, <span class="keyword">function</span> (<span class="params">error</span>) &#123;</span><br><span class="line">    <span class="comment">// Handle any error from step1 through step4</span></span><br><span class="line">  &#125;)</span><br><span class="line">  .<span class="title function_">done</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Generator优化 */</span></span><br><span class="line"><span class="keyword">function</span>* <span class="title function_">longRunningTask</span>(<span class="params">value1</span>) &#123;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">var</span> value2 = <span class="keyword">yield</span> <span class="title function_">step1</span>(value1);</span><br><span class="line">    <span class="keyword">var</span> value3 = <span class="keyword">yield</span> <span class="title function_">step2</span>(value2);</span><br><span class="line">    <span class="keyword">var</span> value4 = <span class="keyword">yield</span> <span class="title function_">step3</span>(value3);</span><br><span class="line">    <span class="keyword">var</span> value5 = <span class="keyword">yield</span> <span class="title function_">step4</span>(value4);</span><br><span class="line">    <span class="comment">// Do something with value4</span></span><br><span class="line">  &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">    <span class="comment">// Handle any error from step1 through step4</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 手动编写函数，按次序自动执行所有步骤 */</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">scheduler</span>(<span class="params">task</span>)&#123;</span><br><span class="line">  <span class="keyword">const</span> taskObj = task.<span class="title function_">next</span>(task.<span class="property">value</span>)</span><br><span class="line">  <span class="keyword">if</span>(!taskObj.<span class="property">done</span>)&#123;</span><br><span class="line">    task.<span class="property">value</span> = taskObj.<span class="property">value</span></span><br><span class="line">    <span class="title function_">scheduler</span>(task)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">scheduler</span>(<span class="title function_">longRunningTask</span>(initialValue))</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-Generator函数的异步应用"><a href="#3-Generator函数的异步应用" class="headerlink" title="3. Generator函数的异步应用"></a>3. Generator函数的异步应用</h2><p>Generator函数遇到<code>yield</code>就暂停执行，调用<code>next()</code>就恢复执行的特性，使得它可以作为 JavaScript 中的异步解决方案。</p>
+<p>ES6诞生以前，JavaScript异步编程的方法，大概有四种：回调函数、事件监听、发布&#x2F;订阅和Promise对象，ES6新增的Generator函数带来了新的异步方案。</p>
+<p>在其他传统的编程语言中，早有许多异步编程的解决方案。其中有一种叫做“协程”(coroutine)，意为多个线程相互协作，完成异步任务。它的运行流程大致如下：</p>
+<ol>
+<li>协程A开始执行</li>
+<li>协程A执行到一半，进入暂停，执行权转移到协程B</li>
+<li>(一段时间后)协程B交还执行权</li>
+<li>协程A恢复执行</li>
+</ol>
+<p>JavaScript是单线程语言，所以此处的协程A可以等同于异步任务A。我们不难看出，Generator函数采用了协程的思想，整个Generator函数可以看做异步任务的容器，异步操作需要暂停的地方，都用<code>yield</code>语句注明。</p>
+<p>除了暂停执行(<code>yield</code>)和恢复执行(<code>next()</code>)，Generator函数还支持函数体内外的交换和错误处理机制 ：</p>
 <ul>
-<li>在一轮事件循环中，依次执行任务队列中的每一个任务，创建对应的执行上下文，压入执行栈执行。</li>
-<li>期间如果遇到微任务，只将其添加到微任务队列，然后继续执行任务队列中的任务。</li>
-<li>当任务队列中的任务执行完毕，执行栈为空时，依次执行微任务队列中的每一个微任务，直到微任务队列为空，允许微任务添加微任务。</li>
-<li>当所有微任务都被执行完毕后，本轮事件循环结束。</li>
-<li>下一轮事件循环开启，循环往复。</li>
+<li><code>next</code>返回值的<code>value</code>属性，是Generator函数向外<strong>输出</strong>数据，<code>next</code>方法接受的参数，是向Generator函数体内<strong>输入</strong>数据。</li>
+<li><code>throw</code>方法可以在函数体外抛出错误，然后在函数体内捕获</li>
 </ul>
-    
+<h3 id="实例：执行异步任务"><a href="#实例：执行异步任务" class="headerlink" title="实例：执行异步任务"></a>实例：执行异步任务</h3><p>下面来看如何使用Generator函数，执行一个真实的异步任务：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> fetch = <span class="built_in">require</span>(<span class="string">&#x27;node-fetch&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span>* <span class="title function_">gen</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="keyword">let</span> url = <span class="string">&#x27;https://api.github.com/users/github&#x27;</span></span><br><span class="line">  <span class="keyword">let</span> result = <span class="keyword">yield</span> <span class="title function_">fetch</span>(url)</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(result.<span class="property">bio</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> g = <span class="title function_">gen</span>()</span><br><span class="line"><span class="keyword">let</span> result = g.<span class="title function_">next</span>()</span><br><span class="line">result.<span class="property">value</span>.<span class="title function_">then</span>(<span class="keyword">function</span>(<span class="params">data</span>)&#123;</span><br><span class="line">  <span class="keyword">return</span> data.<span class="title function_">json</span>()</span><br><span class="line">&#125;).<span class="title function_">then</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">  g.<span class="title function_">next</span>(data)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，首先执行Generator函数，获取遍历器对象，然后使用<code>next</code>方法，执行异步任务的第一阶段，向远程服务器发送请求。由于<code>Fetch</code>模块返回的是一个<code>Promise</code>对象，因此要用<code>then</code>方法拿到请求的返回值，转换为<code>json</code>后再作为参数传入<code>next</code>方法中，最终被打印到控制台上。</p>
+<p>可以看到，虽然Generator函数将异步操作表示得很简洁，但是流程管理却很不方便，我们很难控制何时执行第一阶段，何时执行第二阶段。我们希望有一种方法，当判断异步操作执行完成时，可以自动执行<code>next</code>方法，将执行权交还给Generator函数。</p>
+<p>自动执行的关键是：有一种机制，自动控制Generator函数的流程，接收和交还程序的执行权。两种方法可以做到这点：</p>
+<ol>
+<li>回调函数：将异步操作包装成Thunk函数，在回调函数里面交回执行权</li>
+<li>Promise对象：将异步操作包装成Promise对象，用then方法交回执行权</li>
+</ol>
+<h3 id="自动执行Generator函数的模块"><a href="#自动执行Generator函数的模块" class="headerlink" title="自动执行Generator函数的模块"></a>自动执行Generator函数的模块</h3><h4 id="thunkify"><a href="#thunkify" class="headerlink" title="thunkify"></a>thunkify</h4><p>在编译器中，Thunk函数用于实现“传名调用”，即将参数放到一个临时函数之中，再将这个临时函数传入函数体，这个临时函数就叫做Thunk函数。</p>
+<p>而JavaScript语言是传值调用，所以它的Thunk函数替换的不是表达式，而是多参数函数，将其替换成一个只接受回调函数作为参数的单参数函数。</p>
+<p>任何函数，只要参数有回调函数，就能写成Thunk函数的形式，下面是一个简单的Thunk函数转换器：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* ES5版本 */</span></span><br><span class="line"><span class="keyword">var</span> <span class="title class_">Thunk</span> = <span class="keyword">function</span>(<span class="params">fn</span>)&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="keyword">let</span> args = <span class="title class_">Array</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">slice</span>.<span class="title function_">call</span>(<span class="variable language_">arguments</span>)</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">function</span>(<span class="params">callback</span>)&#123;</span><br><span class="line">      args.<span class="title function_">push</span>(callback)</span><br><span class="line">      <span class="keyword">return</span> fn.<span class="title function_">apply</span>(<span class="variable language_">this</span>, args)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* ES6版本 */</span></span><br><span class="line"><span class="keyword">const</span> <span class="title class_">Thunk</span> = <span class="keyword">function</span>(<span class="params">fn</span>)&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">function</span>(<span class="params">...args</span>)&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">function</span>(<span class="params">callback</span>)&#123;</span><br><span class="line">      <span class="keyword">return</span> fn.<span class="title function_">call</span>(<span class="variable language_">this</span>, ...args, callback)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 生成fs.readFile的Thunk函数 */</span></span><br><span class="line"><span class="keyword">const</span> readFileThunk = <span class="title class_">Thunk</span>(fs.<span class="property">readFile</span>)</span><br><span class="line"><span class="title function_">readFileThunk</span>(fileA)(callback)</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://www.npmjs.com/package/thunkify">Thunkify模块</a>可以将常规函数转换为thunk函数。</p>
+<p><a target="_blank" rel="noopener" href="https://www.bookstack.cn/read/es6-3rd/spilt.4.docs-generator-async.md#cw2ht4">thunk函数的原理</a>此处不再详细介绍，只需要知道利用thunk函数可以自动执行Generator函数。</p>
+<p>下面是一个基于Thunk函数的Generator执行器：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">run</span>(<span class="params">fn</span>)&#123;</span><br><span class="line">  <span class="keyword">let</span> gen = <span class="title function_">fn</span>()</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">function</span> <span class="title function_">next</span>(<span class="params">err, data</span>)&#123;</span><br><span class="line">    <span class="keyword">let</span> result = gen.<span class="title function_">next</span>(data)</span><br><span class="line">    <span class="keyword">if</span>(result.<span class="property">done</span>) <span class="keyword">return</span></span><br><span class="line">    result.<span class="title function_">value</span>(next)</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="title function_">next</span>()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span>* <span class="title function_">g</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="keyword">let</span> f1 = <span class="keyword">yield</span> <span class="title function_">readFileThunk</span>(<span class="string">&#x27;fileA&#x27;</span>)</span><br><span class="line">  <span class="keyword">let</span> f2 = <span class="keyword">yield</span> <span class="title function_">readFileThunk</span>(<span class="string">&#x27;fileB&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">run</span>(g)</span><br></pre></td></tr></table></figure>
+
+<p>有了这个执行器，执行Generator函数就方便多了。不管内部有多少个异步操作，直接把Generator函数传入<code>run</code>函数即可。</p>
+<p>当前，前提是每一个异步操作，都要是Thunk函数，即跟在yield命令后面的必须是Thunk函数。</p>
+<h4 id="co模块"><a href="#co模块" class="headerlink" title="co模块"></a>co模块</h4><p><a target="_blank" rel="noopener" href="https://github.com/tj/co">co模块</a>是著名程序员TJ Holowaychuk于2013年6月发布的一个小工具，用于Generator函数的自动执行。</p>
+<p>co模块可以让你不用编写Generator函数的执行器，如下所示：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> gen = <span class="keyword">function</span>* ()&#123;</span><br><span class="line">  <span class="keyword">let</span> f1 = <span class="keyword">yield</span> <span class="title function_">readFile</span>(<span class="string">&#x27;/etc/fstab&#x27;</span>)</span><br><span class="line">  <span class="keyword">let</span> f2 = <span class="keyword">yield</span> <span class="title function_">readFile</span>(<span class="string">&#x27;/etc/shells&#x27;</span>)</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(f1.<span class="title function_">toString</span>())</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(f2.<span class="title function_">toString</span>())</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> co = <span class="built_in">require</span>(<span class="string">&#x27;co&#x27;</span>)</span><br><span class="line"><span class="title function_">co</span>(gen)</span><br></pre></td></tr></table></figure>
+
+<p><code>co</code>函数返回一个Promise对象，因此可以用<code>then</code>方法添加回调函数。下面代码中，等到Generator函数执行结束，就会输出一行提示：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">co</span>(gen).<span class="title function_">then</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Generator函数执行完成&#x27;</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-异步方案优化：async和await"><a href="#4-异步方案优化：async和await" class="headerlink" title="4. 异步方案优化：async和await"></a>4. 异步方案优化：async和await</h2><p>前文提到过，thunkify模块和co模块解决了Generator函数自动执行的问题。等到ES2017标准引入<code>async</code>函数后，异步操作就变得更加方便了。</p>
+<p><code>async</code>函数是什么？如果用一句话来概括，它就是Generator函数的语法糖。</p>
+<p>我们来看实际例子，前文有一个Generator函数，依次读取两个文件：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">&#x27;fs&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 相当于将fs.readFile转换为Thunk函数 */</span></span><br><span class="line"><span class="keyword">const</span> readFile = <span class="keyword">function</span>(<span class="params">filename</span>)&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">    fs.<span class="title function_">readFile</span>(fileName, <span class="function">(<span class="params">error, data</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">if</span>(error) <span class="keyword">return</span> <span class="title function_">reject</span>(error)</span><br><span class="line">      <span class="title function_">resolve</span>(data)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> gen = <span class="keyword">function</span>* ()&#123;</span><br><span class="line">  <span class="keyword">const</span> f1 = <span class="keyword">yield</span> <span class="title function_">readFile</span>(<span class="string">&#x27;/etc/fstab&#x27;</span>)</span><br><span class="line">  <span class="keyword">const</span> f2 = <span class="keyword">yield</span> <span class="title function_">readFile</span>(<span class="string">&#x27;/etc/shells&#x27;</span>)</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(f1.<span class="title function_">toString</span>())</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(f2.<span class="title function_">toString</span>())</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码中的函数<code>gen</code>可以写成<code>async</code>函数：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> asyncReadFile = <span class="keyword">async</span> <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="keyword">const</span> f1 = <span class="keyword">await</span> <span class="title function_">readFile</span>(<span class="string">&#x27;/etc/fstab&#x27;</span>)</span><br><span class="line">  <span class="keyword">const</span> f2 = <span class="keyword">await</span> <span class="title function_">readFile</span>(<span class="string">&#x27;/etc/shells&#x27;</span>)</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(f1.<span class="title function_">toString</span>())</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(f2.<span class="title function_">toString</span>())</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>怎么样，是不是简洁了很多？代码看起来也更容易阅读了？</p>
+<p>把这两个例子一对比，就会发现：<code>async</code>函数就是将Generator函数的星号(<code>*</code>)替换成了<code>async</code>，将<code>yield</code>替换为<code>await</code>。</p>
+<p><code>async</code>函数对Generator函数的改进，体现在以下四点：</p>
+<ol>
+<li>内置执行器：Generator函数的执行必须靠执行器，所以才有了<code>co</code>模块。而<code>async</code>函数自带执行器，执行与普通函数一模一样。</li>
+<li>更好的语义：<code>async</code>表示函数里有异步操作，<code>await</code>表示此处需要等待结果。</li>
+<li>更广的适用性：<code>co</code>模块约定，<code>yield</code>命令后面只能是Thunk函数或Promise对象。而<code>async</code>函数的<code>await</code>命令后，可以是Promise对象和原始类型的值(会自动转成立即<code>resolved</code>的Promise对象)。</li>
+<li>返回值是Promise：<code>async</code>函数的返回值是Promise对象，这比Generator函数的返回值是Iterator对象更加方便。</li>
+</ol>
+<h3 id="一些常见的异步场景"><a href="#一些常见的异步场景" class="headerlink" title="一些常见的异步场景"></a>一些常见的异步场景</h3><h4 id="1-按顺序完成异步操作"><a href="#1-按顺序完成异步操作" class="headerlink" title="1. 按顺序完成异步操作"></a>1. 按顺序完成异步操作</h4><p>实际开发中，经常遇到一组异步操作，需要按顺序完成。比如，依次远程读取一组URL，然后按读取的顺序（http请求返回的顺序）输出结果。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* 注意：async函数始终返回一个Promise对象，即使函数内部没有return语句</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">logInOrder</span>(<span class="params">urls</span>)&#123;</span><br><span class="line">  <span class="keyword">const</span> textPromises = urls.<span class="title function_">map</span>(<span class="keyword">async</span> url =&gt; &#123;</span><br><span class="line">    <span class="keyword">const</span> response = <span class="keyword">await</span> <span class="title function_">fetch</span>(url)</span><br><span class="line">    <span class="keyword">return</span> response.<span class="title function_">text</span>()</span><br><span class="line">  &#125;)</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">const</span> textPromise <span class="keyword">of</span> textPromises)&#123;</span><br><span class="line">    <span class="keyword">const</span> text = <span class="keyword">await</span> textPromise</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(text)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，虽然<code>map</code>方法的参数是<code>async</code>函数，但它是并发执行的，因为只有<code>async</code>函数内部是继发执行，外部不受影响。后面的<code>for...of</code>循环内部使用了<code>await</code>，因此实现了按顺序输出。</p>
+<p>题外话：<code>map</code>并发执行，与<code>for...of</code>继发执行的区别：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* map 并发执行：</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">resolveAfterNSeconds</span>(<span class="params">url</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Promise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">      <span class="title function_">resolve</span>(url + <span class="string">&#x27;resolved&#x27;</span>);</span><br><span class="line">    &#125;, <span class="number">1000</span> * url);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">concurrentAsyncCall</span>(<span class="params">urls</span>) &#123;</span><br><span class="line">  urls.<span class="title function_">map</span>(<span class="keyword">async</span> url =&gt; &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(url)</span><br><span class="line">    <span class="keyword">const</span> res = <span class="keyword">await</span> <span class="title function_">resolveAfterNSeconds</span>(url)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(res)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">concurrentAsyncCall</span>([<span class="number">5</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment">// output：</span></span><br><span class="line"><span class="comment">// 5,4,3,2,1,1resolved，2resolved，3resolved，4resolved，5resolved</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* for...of 继发执行：</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">secondaryAsyncCall</span>(<span class="params">urls</span>) &#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">const</span> url <span class="keyword">of</span> urls)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(url)</span><br><span class="line">    <span class="keyword">const</span> res = <span class="keyword">await</span> <span class="title function_">resolveAfterNSeconds</span>(url)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(res)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">secondaryAsyncCall</span>([<span class="number">5</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment">// output</span></span><br><span class="line"><span class="comment">// 5,5resolved, 4,4resolved, 3,3resolved, 2,2resolved, 1,1resolved</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-Promise串行继发执行"><a href="#2-Promise串行继发执行" class="headerlink" title="2. Promise串行继发执行"></a>2. Promise串行继发执行</h3><p>这个场景源于工作实际开发中，需要逐个串行向后端发送数目不定的Promise请求。即：第一个Promise请求成功后，才会发送第二个Promise请求；也就是说，继发执行。</p>
+<p>所以无论是<code>Promise.all()</code>，还是<code>Promise.race()</code>都不适用。</p>
+<p>经过查阅资料，最终得到了两种实现方法：<code>Array.reduce</code>和<code>for...of</code>：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* getData：表示一个request请求</span></span><br><span class="line"><span class="comment">* 当然，此处用setTimeout来模拟一下</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">getData</span>(<span class="params">url</span>)&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Promise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> time = <span class="title class_">Number</span>.<span class="built_in">parseInt</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>() * <span class="number">10000</span>)</span><br><span class="line">    <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">      <span class="title function_">resolve</span>(&#123;time&#125;)</span><br><span class="line">    &#125;, time)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* Array.reduce</span></span><br><span class="line"><span class="comment">* 此处userIds代指数量不定的Promise请求</span></span><br><span class="line"><span class="comment">* 参数time并没有具体的意义，只是代表可能存在的参数</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> urls = [</span><br><span class="line">    <span class="string">&#x27;https://www.baidu.com/&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;https://cn.bing.com/&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;https://www.google.com/&#x27;</span></span><br><span class="line">]</span><br><span class="line"></span><br><span class="line">urls.<span class="title function_">reduce</span>(<span class="keyword">async</span> (previousPromise, url) =&gt; &#123;</span><br><span class="line">    <span class="keyword">const</span> time = <span class="keyword">await</span> accumulatorPromise</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Promise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="title function_">getData</span>(url).<span class="title function_">then</span>(<span class="function"><span class="params">res</span> =&gt;</span> &#123;</span><br><span class="line">            <span class="title function_">resolve</span>(res.<span class="property">time</span>)</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;, <span class="title class_">Promise</span>.<span class="title function_">resolve</span>(&#123;<span class="attr">time</span>: <span class="number">0</span>&#125;))</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* for...of：语义性更好</span></span><br><span class="line"><span class="comment">* 因为for...of会自动去寻找迭代器接口</span></span><br><span class="line"><span class="comment">* 所以可以保证操作的继发性，</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">serialPromise</span>(<span class="params">urls</span>)&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">const</span> url <span class="keyword">of</span> urls)&#123;</span><br><span class="line">    <span class="keyword">const</span> res = <span class="keyword">await</span> <span class="title function_">getData</span>(url)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(res.<span class="property">time</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="一些注意事项"><a href="#一些注意事项" class="headerlink" title="一些注意事项"></a>一些注意事项</h3><p>[1] <code>await</code>命令后面的<code>Promise</code>对象，运行结果可能是<code>rejected</code>，所以最好把<code>await</code>命令放在<code>try...catch</code>代码块中。如果不作处理的话，最终该错误会被<code>async</code>函数返回的<code>Promise</code>对象的<code>catch</code>捕获。</p>
+<p>[2] 多个<code>await</code>命令后面的异步操作，如果不存在继发关系，最好让它们同时触发。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [foo, bar] = <span class="keyword">await</span> <span class="title class_">Promise</span>.<span class="title function_">all</span>([<span class="title function_">getFoo</span>(), <span class="title function_">getBar</span>()])</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 另一种写法 */</span></span><br><span class="line"><span class="keyword">let</span> fooPromise = <span class="title function_">getFoo</span>()</span><br><span class="line"><span class="keyword">let</span> barPromise = <span class="title function_">getBar</span>()</span><br><span class="line"><span class="keyword">let</span> foo = <span class="keyword">await</span> fooPromise</span><br><span class="line"><span class="keyword">let</span> bar = <span class="keyword">await</span> barPromise</span><br></pre></td></tr></table></figure>
+
+<p>[3] <code>await</code>命令只能用在<code>async</code>函数之中，如果用在普通函数中，就会报错。</p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://www.bookstack.cn/read/es6-3rd/spilt.1.docs-iterator.md">Iterator（遍历器）的概念 - ES6标准入门教程 - 阮一峰</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bookstack.cn/read/es6-3rd/docs-generator.md">Generator 函数的语法 - ES6标准教程 - 阮一峰</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bookstack.cn/read/es6-3rd/docs-async.md">async 函数 - ES6标准教程 - 阮一峰</a></li>
+</ol>
+
   </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-05-08T16:22:25+08:00">2023-05-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">前端</span></a>
-            </span>
-          
-        
-      </div>
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2023/05/08/JavaScript-runtime-and-event-loop/' itemprop="url">
-            Read More
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-12T21:19:09+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Sep 12, 2023</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/03/Vue-nextTick/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="xyw的小站">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="xyw的小站">
-    <meta itemprop="description" content="xyw的个人技术博客">
-  </span>
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/JavaScript/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>JavaScript</p></a></div>
+  <span hidden itemprop="keywords">JavaScript</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/06/10/Iterator-and-Generator/&title=迭代器与生成器 - xyw的小站&summary=JavaScript表示“集合”的数据结构有：Array、Object、Map和Set(后两者是ES6新增的)，因此需要一种统一的接口机制，来处理所有不同的数据结构。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/06/10/Iterator-and-Generator/&title=迭代器与生成器 - xyw的小站&summary=JavaScript表示“集合”的数据结构有：Array、Object、Map和Set(后两者是ES6新增的)，因此需要一种统一的接口机制，来处理所有不同的数据结构。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/06/10/Iterator-and-Generator/&title=迭代器与生成器 - xyw的小站&summary=JavaScript表示“集合”的数据结构有：Array、Object、Map和Set(后两者是ES6新增的)，因此需要一种统一的接口机制，来处理所有不同的数据结构。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
   
+
   
+    <div class="prev-next">
+      
+        <a class='prev' href='/2023/07/04/Vue-reactivity/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Vue的响应式原理</p>
+          <p class='content'>首先来探讨一下这个问题，什么是响应性？
+响应性这个术语在今天的各种编程讨论中经常出现，Vue3官网在深入响应式系统一节中对它的解释如下：
+
+
+
+响应性是一种可以使我们声明式地处理变化的编程范式。...</p>
+        </a>
+      
+      
+        <a class='next' href='/2023/05/08/JavaScript-runtime-and-event-loop/'>
+          <p class='title'>JavaScript运行时及事件循环<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>先放个人总结，下文会详细解释：
+JavaScript运行时维护了一组代理，每个代理包括：
+一组执行上下文集合、执行上下文栈、主线程、worker额外线程、(宏)任务队列、微任务队列。
+每个代理由...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2023/06/10/Iterator-and-Generator/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/04/03/Vue-nextTick/"  itemprop="url">
-        Vue中的$nextTick有什么作用？
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>首先明确一个事实：Vue在更新DOM时是异步执行的。Vue官网在<a target="_blank" rel="noopener" href="https://v2.cn.vuejs.org/v2/guide/reactivity.html">深入响应式原理</a>一节中是这么描述异步更新队列的：</p>
-<blockquote>
-<p>当侦听到数据变化，Vue将开启一个队列，并缓冲在同一事件循环中发生的所有数据变更。如果同一个watcher被多次触发，只会被推入到队列中一次。这种在缓冲时去除重复数据对于避免不必要的计算和DOM操作是非常重要的。</p>
-<p>然后，在下一个事件循环”tick”中，Vue刷新队列并执行实际(已去重的)工作。</p>
-<p>Vue在内部对异步队列尝试使用原生的<code>Promise.then</code>、<code>MutationObserver</code>和<code>setImmediate</code>，如果执行环境不支持，则会采用<code>setTimeout(fn, 0)</code>代替。</p>
-</blockquote>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-04-03T10:43:43+08:00">2023-04-03</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">前端</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/04/03/Vue-nextTick/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
+    <div id="layoutHelper-comments"></div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-    
-  
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2725,134 +2804,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='https://raw.githubusercontent.com/xyw-m/imgForPicGo/main/202305031010515.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-          <p>生活需要长远的清醒。</p>
-
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/1043545633@qq.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/xyw-m"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%89%8D%E7%AB%AF/" href="/categories/%E5%89%8D%E7%AB%AF/"
-            active-action="action-categoriesE5898DE7ABAF"
-            ><div class='name'>前端</div><div class='badge'>(4)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/JavaScript/" style="font-size: 14px; color: #999">JavaScript</a> <a href="/tags/Vue/" style="font-size: 14px; color: #999">Vue</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Iterator%E4%B8%8Efor%E2%80%A6of"><span class="toc-text">1. Iterator与for…of</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Iterator%E6%8E%A5%E5%8F%A3"><span class="toc-text">Iterator接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E7%94%A8%E6%B3%95"><span class="toc-text">其他用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E5%99%A8%E7%9A%84%E5%A6%99%E7%94%A8"><span class="toc-text">生成器的妙用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Generator%E5%87%BD%E6%95%B0"><span class="toc-text">2. Generator函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89Iterator%E6%8E%A5%E5%8F%A3"><span class="toc-text">自定义Iterator接口</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Generator%E5%87%BD%E6%95%B0%E7%9A%84%E5%BC%82%E6%AD%A5%E5%BA%94%E7%94%A8"><span class="toc-text">3. Generator函数的异步应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B%EF%BC%9A%E6%89%A7%E8%A1%8C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1"><span class="toc-text">实例：执行异步任务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E6%89%A7%E8%A1%8CGenerator%E5%87%BD%E6%95%B0%E7%9A%84%E6%A8%A1%E5%9D%97"><span class="toc-text">自动执行Generator函数的模块</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#thunkify"><span class="toc-text">thunkify</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#co%E6%A8%A1%E5%9D%97"><span class="toc-text">co模块</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%BC%82%E6%AD%A5%E6%96%B9%E6%A1%88%E4%BC%98%E5%8C%96%EF%BC%9Aasync%E5%92%8Cawait"><span class="toc-text">4. 异步方案优化：async和await</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E7%9A%84%E5%BC%82%E6%AD%A5%E5%9C%BA%E6%99%AF"><span class="toc-text">一些常见的异步场景</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%8C%89%E9%A1%BA%E5%BA%8F%E5%AE%8C%E6%88%90%E5%BC%82%E6%AD%A5%E6%93%8D%E4%BD%9C"><span class="toc-text">1. 按顺序完成异步操作</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Promise%E4%B8%B2%E8%A1%8C%E7%BB%A7%E5%8F%91%E6%89%A7%E8%A1%8C"><span class="toc-text">2. Promise串行继发执行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-text">一些注意事项</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-text">参考资料</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2880,13 +2873,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3400,7 +3394,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"xyw的小站","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"xyw的个人技术博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"xyw的小站"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/前端/","name":"前端"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"xyw的小站","url":"http://example.com/","keywords":null,"description":"xyw的个人技术博客","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"xyw的个人技术博客"},"publisher":{"@type":"Organization","name":"xyw的小站","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"xyw的个人技术博客","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"xyw的小站","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"xyw的小站","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"xyw的个人技术博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"xyw的小站"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/前端/","name":"前端"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/06/10/Iterator-and-Generator/","name":"迭代器与生成器"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"xyw的小站","url":"http://example.com/","keywords":null,"description":"xyw的个人技术博客","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"xyw的个人技术博客"},"publisher":{"@type":"Organization","name":"xyw的小站","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"迭代器与生成器","description":"JavaScript表示“集合”的数据结构有：Array、Object、Map和Set(后两者是ES6新增的)，因此需要一种统一的接口机制，来处理所有不同的数据结构。","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/06/10/Iterator-and-Generator/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"xyw的小站","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/06/10/Iterator-and-Generator/","wordCount":83,"datePublished":"2023-06-10T08:22:25.000Z","dateModified":"2023-09-12T13:19:09.842Z","articleSection":"前端","keywords":"JavaScript","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

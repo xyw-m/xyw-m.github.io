@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.7.7">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  
-  <link rel="canonical" href="http://example.com/2023/05/03/javascript-runtime-and-event-loop/"/>
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="http://example.com/archives/2023/04/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -31,27 +31,18 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>JavaScript运行时及事件循环 - xyw的小站</title>
-  <meta name="keywords" content="JavaScript,null">
-  <meta desc name="description" content="先放个人总结，下文会详细解释：
-JavaScript运行时维护了一组代理，每个代理包括：
-一组执行上下文集合、执行上下文栈、主线程、worker额外线程、(宏)任务队列、微任务队列。
-每个代理由事件循环驱动：
-
-在一轮事件循环中，依次执行任务队列中的每一个任务，创建对应的执行上下文，压入执行栈执行。
-期间如果遇到... - John Doe - xyw的小站">
+  <title>Archive: 2023/4 - xyw的小站</title>
+  <meta name="keywords" content="null">
+  <meta desc name="description" content="xyw的个人技术博客 - John Doe - xyw的小站">
   
-<meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript运行时及事件循环">
-<meta property="og:url" content="http://example.com/2023/05/03/JavaScript-runtime-and-event-loop/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="xyw的小站">
+<meta property="og:url" content="http://example.com/archives/2023/04/index.html">
 <meta property="og:site_name" content="xyw的小站">
-<meta property="og:description" content="先放个人总结，下文会详细解释： JavaScript运行时维护了一组代理，每个代理包括： 一组执行上下文集合、执行上下文栈、主线程、worker额外线程、(宏)任务队列、微任务队列。 每个代理由事件循环驱动：  在一轮事件循环中，依次执行任务队列中的每一个任务，创建对应的执行上下文，压入执行栈执行。 期间如果遇到微任务，只将其添加到微任务队列，然后继续执行任务队列中的任务。 当任务队列中的任务执行">
+<meta property="og:description" content="xyw的个人技术博客">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-05-03T08:22:25.000Z">
-<meta property="article:modified_time" content="2023-09-12T07:18:47.419Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -1749,7 +1740,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1694503197200),
+    lastupdate: new Date(1694524788460),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2374,7 +2365,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper post dock' style="display: none;">
+      <div id="none" class='cover-wrapper  dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://raw.githubusercontent.com/xyw-m/imgForPicGo/main/202305031030591.jpg"></div>
 
@@ -2437,8 +2428,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/03/JavaScript-runtime-and-event-loop/">
+	
+		
+  <section class="post-list">
+    
+      
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/03/Vue-nextTick/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="xyw的小站">
   </span>
@@ -2447,362 +2452,68 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="xyw的个人技术博客">
   </span>
   
-
-
+  
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  <div class="article-meta" id="top">
+  
     
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/04/03/Vue-nextTick/"  itemprop="url">
+        Vue中的$nextTick有什么作用？
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
     
-    
-      <h1 class="title" itemprop="name headline">
-        JavaScript运行时及事件循环
-      </h1>
-      <div class='new-meta-box'>
-        
-          
-            
-<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-    <p itemprop="name">请设置文章作者</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  <div class='new-meta-item category'>
-    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
-    <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
-    
-      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">前端</span></a>
-      </span>
+      <p>首先明确一个事实：Vue在更新DOM时是异步执行的。Vue官网在<a target="_blank" rel="noopener" href="https://v2.cn.vuejs.org/v2/guide/reactivity.html">深入响应式原理</a>一节中是这么描述异步更新队列的：</p>
+<blockquote>
+<p>当侦听到数据变化，Vue将开启一个队列，并缓冲在同一事件循环中发生的所有数据变更。如果同一个watcher被多次触发，只会被推入到队列中一次。这种在缓冲时去除重复数据对于避免不必要的计算和DOM操作是非常重要的。</p>
+<p>然后，在下一个事件循环”tick”中，Vue刷新队列并执行实际(已去重的)工作。</p>
+<p>Vue在内部对异步队列尝试使用原生的<code>Promise.then</code>、<code>MutationObserver</code>和<code>setImmediate</code>，如果执行环境不支持，则会采用<code>setTimeout(fn, 0)</code>代替。</p>
+</blockquote>
     
   </div>
-
-
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-04-03T10:43:43+08:00">2023-04-03</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">前端</span></a>
+            </span>
           
         
-          
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-05-03T16:22:25+08:00">
-  <a class='notlink'>
-    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：May 3, 2023</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-
-
-
-          
-        
-        <!-- Custom Files topMeta begin-->
-        
-        <!-- Custom Files topMeta end-->
       </div>
-    
-  </div>
-
-
-  <div id="layoutHelper-page-plugins"></div>
-  <div id="post-body" itemprop="articleBody">
-    <p>先放个人总结，下文会详细解释：</p>
-<p>JavaScript运行时维护了一组代理，每个代理包括：</p>
-<p>一组执行上下文集合、执行上下文栈、主线程、worker额外线程、(宏)任务队列、微任务队列。</p>
-<p>每个代理由事件循环驱动：</p>
-<ul>
-<li>在一轮事件循环中，依次执行任务队列中的每一个任务，创建对应的执行上下文，压入执行栈执行。</li>
-<li>期间如果遇到微任务，只将其添加到微任务队列，然后继续执行任务队列中的任务。</li>
-<li>当任务队列中的任务执行完毕，执行栈为空时，依次执行微任务队列中的每一个微任务，直到微任务队列为空，允许微任务添加微任务。</li>
-<li>当所有微任务都被执行完毕后，本轮事件循环结束。</li>
-<li>下一轮事件循环开启，循环往复。</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="1-为什么JavaScript是单线程？"><a href="#1-为什么JavaScript是单线程？" class="headerlink" title="1.为什么JavaScript是单线程？"></a>1.为什么JavaScript是单线程？</h2><p>作为浏览器脚本语言，JavaScript的主要用途是与用户互动，以及操作DOM。这决定了它只能是单线程，否则会带来很复杂的同步问题。</p>
-<p>比如，假定JavaScript同时有两个线程，一个线程在某个DOM节点上添加内容，另一个线程删除了这个节点，这时浏览器应该以哪个线程为准？</p>
-<p>因此，为了避免复杂性，从一诞生JavaScript就是单线程。这已经成了这门语言的核心特征，将来也不会改变。</p>
-<p>为了利用多核CPU的计算能力，HTML5提出Web Worker标准，允许JavaScript脚本创建多个线程，但是子线程完全受主线程控制，且不得操作<code>DOM</code>。</p>
-<p>因此，这个新标准并没有改变JavaScript单线程的本质，通过Web Worker创建的新线程中甚至不能获取到<code>document</code>和<code>window</code>对象(<strong>待测试</strong>)。</p>
-<h2 id="2-JavaScript运行时"><a href="#2-JavaScript运行时" class="headerlink" title="2.JavaScript运行时"></a>2.JavaScript运行时</h2><p>JavaScript运行时维护了一组代理，每个代理包括：</p>
-<p>一组执行上下文集合、执行上下文栈、主线程、worker额外线程、(宏)任务队列、微任务队列。</p>
-<h3 id="JavaScript执行上下文-execution-context"><a href="#JavaScript执行上下文-execution-context" class="headerlink" title="JavaScript执行上下文(execution context)"></a>JavaScript执行上下文(execution context)</h3><p>当一段JavaScript代码在运行的时候，它实际上是运行在执行上下文中。下面3种类型的代码会创建一个新的执行上下文：</p>
-<ul>
-<li>全局上下文：是为运行代码主体而创建的执行上下文，即默认的，或者说基础的上下文。任何不在函数内部的代码都在全局上下文中。它会执行两件事：创建一个全局的window对象(浏览器环境下)，并且设置<code>this</code>的值等于这个全局对象。一个程序中只会有一个全局上下文</li>
-<li>函数执行上下文：每个函数会在执行时创建自己的执行上下文，这个上下文就是通常说的“本地上下文”。</li>
-<li>Eval函数执行上下文：使用<code>eval()</code>函数也会创建一个新的执行上下文。</li>
-</ul>
-<p>每一个上下文在本质上都是一种作用域层级，每个代码段开始执行时都会创建一个新的上下文来运行它。每个上下文创建的时候会被推入执行上下文栈，退出时，从上下文栈中移除并销毁。</p>
-<h3 id="执行上下文栈"><a href="#执行上下文栈" class="headerlink" title="执行上下文栈"></a>执行上下文栈</h3><p>执行栈，也就是其他编程语言中所说的“调用栈”，是一种拥有LIFO(后进先出)的数据结构，被用来存储代码运行时创建的所有执行上下文。</p>
-<p>当JavaScript引擎第一次遇到你的脚本时，它会创建一个全局的执行上下文并且压入当前执行栈。每当引擎遇到一个函数调用，它会为该函数创建一个新的执行上下文并压入栈的顶部。</p>
-<p>引擎会执行处于栈顶的执行上下文的函数。当该函数执行结束时，执行上下文从栈中弹出，控制流程到达当前栈中的下一个上下文。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="string">&quot;Hello World!&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">first</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Inside first function&#x27;</span>)</span><br><span class="line">  <span class="title function_">second</span>()</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Again inside first function&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">second</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Inside second function&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">first</span>()</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Inside Global Execution Context&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://raw.githubusercontent.com/w1043545633/imgForPicGo/main/202304061506066.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/w1043545633/imgForPicGo/main/202304061506066.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img"></p>
-<h3 id="JavaScript运行时"><a href="#JavaScript运行时" class="headerlink" title="JavaScript运行时"></a>JavaScript运行时</h3><p>在执行JavaScript代码的时候，JavaScript运行时实际上维护了一组用于执行JavaScript的代理。每个代理由以下几个部分构成：</p>
-<ul>
-<li>一组执行上下文的集合</li>
-<li>执行上下文栈</li>
-<li>主线程</li>
-<li>一组可能创建用于执行worker的额外的线程集合</li>
-<li>一个任务队列</li>
-<li>一个微任务队列</li>
-</ul>
-<p>除了主线程(某些浏览器在多个代理之间共享主线程)之外，其他组成部分对该代理都是唯一的。</p>
-<p>介绍了这么多，那么JavaScript运行时究竟是如何工作的？这就不得不提到事件循环了。</p>
-<h2 id="3-事件循环-Event-Loop"><a href="#3-事件循环-Event-Loop" class="headerlink" title="3.事件循环(Event Loop)"></a>3.事件循环(Event Loop)</h2><p>JavaScript运行时维护的每个代理都是由事件循环驱动的。事件循环负责收集事件(包括用户事件以及其他非用户事件)、对任务进行排队以便在合适的时候执行回调。</p>
-<p>事件循环首先执行所有处于等待中的JavaScript任务(宏任务)，然后执行微任务(microtask)，最后在开始下一次循环之前执行一些必要的渲染和绘制操作。</p>
-<p>网页或者app的代码和浏览器本身的用户界面程度运行在相同的线程中，共享相同的事件循环，该线程即为主线程。主线程除了运行网页本身的代码之外，还负责收集和派发用户和其他事件，以及渲染和绘制网页内容等等。</p>
-<h3 id="宏任务vs微任务"><a href="#宏任务vs微任务" class="headerlink" title="宏任务vs微任务"></a>宏任务vs微任务</h3><p>注意：宏任务在MDN及一些文档中，被称为JavaScript任务</p>
-<p>宏任务包括：</p>
-<ul>
-<li>script(整体代码)，由标准机制来执行的任何JavaScript</li>
-<li>setTimeout、setInterval、setImmediate</li>
-<li>I&#x2F;O</li>
-<li>UI rendering</li>
-</ul>
-<p>微任务包括：</p>
-<ul>
-<li>process.nextTick</li>
-<li>Promise</li>
-<li>Object.observe(已废弃)</li>
-<li>MutationObserver(html5新特性)</li>
-</ul>
-<h3 id="事件循环步骤"><a href="#事件循环步骤" class="headerlink" title="事件循环步骤"></a>事件循环步骤</h3><p>现在我们来更新前文提到的事件循环步骤，主线程也是从宏任务开始的：</p>
-<ul>
-<li>执行一个宏任务</li>
-<li>执行过程中如果遇到微任务，加入微任务队列；遇到宏任务，加入(下一个)宏任务队列</li>
-<li>当前队列的宏任务执行完毕后，依次执行微任务队列。微任务执行完毕后，一轮事件循环结束</li>
-<li>开始下一个宏任务</li>
-</ul>
-<p>每一次新的事件循环开始迭代的时候，JavaScript运行时都会执行宏任务队列中的每个任务。在每次迭代开始之后加入到队列中的任务需要在下一次迭代开始之后才会被执行。</p>
-<p>每次当一个宏任务退出且执行上下文为空时，微任务队列中的每一个微任务会依次被执行。不同的是，它会等到微任务队列为空时才会停止执行————即使中途有微任务加入。换句话说，微任务可以添加新的微任务到队列中，并且在下一个宏任务开始执行之前，且当前事件循环结束之前执行完所有的微任务。</p>
-<h3 id="来一道面试题加深理解"><a href="#来一道面试题加深理解" class="headerlink" title="来一道面试题加深理解"></a>来一道面试题加深理解</h3><p>说出下面代码的运行结果，并说明原因：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">async1</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;async1 start&#x27;</span>)</span><br><span class="line">    <span class="keyword">await</span> <span class="title function_">async2</span>()</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;async1 end&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">async2</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;async2&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;script start&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;setTimeOut&#x27;</span>)</span><br><span class="line">&#125;, <span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="title function_">async1</span>()</span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Promise</span>(<span class="keyword">function</span>(<span class="params">resolve</span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;promise1&#x27;</span>) </span><br><span class="line">    <span class="title function_">resolve</span>()</span><br><span class="line">&#125;).<span class="title function_">then</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;promise2&#x27;</span>) </span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;script end&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<p>结果如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//script start</span><br><span class="line">//async1 start</span><br><span class="line">//async2</span><br><span class="line">//promise1</span><br><span class="line">//script end</span><br><span class="line">//async1 end</span><br><span class="line">//promise2</span><br><span class="line">//setTimeOut</span><br></pre></td></tr></table></figure>
-
-<p>这段代码完美的体现了宏任务与微任务的执行区别，让我们来详细分析一下执行流程：</p>
-<ol>
-<li>第一轮事件循环开始</li>
-<li>打印script start</li>
-<li>遇到setTimeout，放入(下一轮)宏任务中，等待执行</li>
-<li>遇到async1，同步执行，打印async1 start</li>
-<li>遇到async2，同步执行，打印async2</li>
-<li>将await async2函数后面的回调函数(async1 end)放入微任务队列</li>
-<li>遇到new Promise，同步执行，打印promise1，将其回调函数(promise2)放入微任务队列</li>
-<li>打印script end，宏任务执行完毕，开始执行微任务</li>
-<li>打印async1 end</li>
-<li>打印promise2，本轮事件循环结束</li>
-<li>进入下一轮事件循环，执行setTimeout，打印setTimeOut</li>
-</ol>
-<p>容易产生困惑的地方就在async和await，async函数本质上还是基于Promise的一些封装，将async1函数用Promise进行如下改写，更易于理解：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">async1</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;async1 start&#x27;</span>)</span><br><span class="line">  <span class="keyword">new</span> <span class="title class_">Promise</span>(<span class="keyword">function</span>(<span class="params">resolve</span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;async2&#x27;</span>)</span><br><span class="line">    <span class="title function_">resolve</span>()</span><br><span class="line">  &#125;).<span class="title function_">then</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;async1 end&#x27;</span>)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-NodeJS中的process-nextTick"><a href="#4-NodeJS中的process-nextTick" class="headerlink" title="4.NodeJS中的process.nextTick"></a>4.NodeJS中的process.nextTick</h2><p>在Node.js中，每当事件循环进行一次完整的循环时，我们将其称为一次tick。当一个函数传给<code>process.nextTick()</code>时，指示引擎在当前操作结束，下一个事件循环tick开始之前调用该函数。</p>
-<p><code>process.nextTick</code>回调函数会被加入<code>process.nextTick</code>队列，<code>Promise.then()</code>回调函数会被加入<code>promise.microtask</code>队列(微任务队列)，而<code>setTimeout</code>和<code>setImmediate</code>回调函数会被加入macrotask队列(宏任务队列)。</p>
-<p>三种队列的优先级排序为：</p>
-<p>process.nextTick ＞ promise.microtask ＞ macrotask(因为在下一轮事件循环中)</p>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
-<li><a target="_blank" rel="noopener" href="https://xieyufei.com/2019/12/30/Quiz-Eventloop.html">从一道面试题来理解JS事件循环</a></li>
-<li><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/HTML_DOM_API/Microtask_guide/In_depth">深入：微任务与JavaScript运行时环境 - MDN</a></li>
-<li><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1604839">(ES5版)深入理解JavaScript执行上下文和执行栈</a></li>
-<li><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Event_loop">并发模型与事件循环 - MDN</a></li>
-<li><a target="_blank" rel="noopener" href="https://nodejs.dev/en/learn/understanding-setimmediate/">Understanding setImmediate() - Node.js</a></li>
-</ol>
-
-  </div>
-  
-  
-    
-    <div class='footer'>
-       <!-- 参考资料、相关资料等 -->
       
-       <!-- 相关文章 -->
-      
-      <!-- 版权声明组件 -->
-      
-      <!-- 打赏组件 -->
+        <div>
+          <a class='readmore' href='/2023/04/03/Vue-nextTick/' itemprop="url">
+            Read More
+          </a>
+        </div>
       
     </div>
   
-  
-    
 
-
-  <div class='article-meta' id="bottom">
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-12T15:18:47+08:00">
-  <a class='notlink'>
-    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Sep 12, 2023</p>
-  </a>
 </div>
 
+          </div>
         
       
-        
-          
+    
+  </section>
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/JavaScript/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>JavaScript</p></a></div>
-  <span hidden itemprop="keywords">JavaScript</span>
-
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
     
-      
-        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/05/03/JavaScript-runtime-and-event-loop/&title=JavaScript运行时及事件循环 - xyw的小站&summary=先放个人总结，下文会详细解释：
-JavaScript运行时维护了一组代理，每个代理包括：
-一组执行上下文集合、执行上下文栈、主线程、worker额外线程、(宏)任务队列、微任务队列。
-每个代理由事件循环驱动：
-
-在一轮事件循环中，依次执行任务队列中的每一个任务，创建对应的执行上下文，压入执行栈执行。
-期间如果遇到微任务，只将其添加到微任务队列，然后继续执行任务队列中的任务。
-当任务队列中的任务执行完毕，执行栈为空时，依次执行微任务队列中的每一个微任务，直到微任务队列为空，允许微任务添加微任务。
-当所有微任务都被执行完毕后，本轮事件循环结束。
-下一轮事件循环开启，循环往复。
-"
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/05/03/JavaScript-runtime-and-event-loop/&title=JavaScript运行时及事件循环 - xyw的小站&summary=先放个人总结，下文会详细解释：
-JavaScript运行时维护了一组代理，每个代理包括：
-一组执行上下文集合、执行上下文栈、主线程、worker额外线程、(宏)任务队列、微任务队列。
-每个代理由事件循环驱动：
-
-在一轮事件循环中，依次执行任务队列中的每一个任务，创建对应的执行上下文，压入执行栈执行。
-期间如果遇到微任务，只将其添加到微任务队列，然后继续执行任务队列中的任务。
-当任务队列中的任务执行完毕，执行栈为空时，依次执行微任务队列中的每一个微任务，直到微任务队列为空，允许微任务添加微任务。
-当所有微任务都被执行完毕后，本轮事件循环结束。
-下一轮事件循环开启，循环往复。
-"
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/05/03/JavaScript-runtime-and-event-loop/&title=JavaScript运行时及事件循环 - xyw的小站&summary=先放个人总结，下文会详细解释：
-JavaScript运行时维护了一组代理，每个代理包括：
-一组执行上下文集合、执行上下文栈、主线程、worker额外线程、(宏)任务队列、微任务队列。
-每个代理由事件循环驱动：
-
-在一轮事件循环中，依次执行任务队列中的每一个任务，创建对应的执行上下文，压入执行栈执行。
-期间如果遇到微任务，只将其添加到微任务队列，然后继续执行任务队列中的任务。
-当任务队列中的任务执行完毕，执行栈为空时，依次执行微任务队列中的每一个微任务，直到微任务队列为空，允许微任务添加微任务。
-当所有微任务都被执行完毕后，本轮事件循环结束。
-下一轮事件循环开启，循环往复。
-"
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-
-
-        
-      
-    </div>
-    <!-- Custom Files bottomMeta begin -->
-    
-    <!-- Custom Files bottomMeta end -->
-  </div>
-
-
-  
-  
-
-  
-    <div class="prev-next">
-      
-        <a class='prev' href='/2023/05/04/Vue-reactivity/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Vue的响应式原理</p>
-          <p class='content'>首先来探讨一下这个问题，什么是响应性？
-响应性这个术语在今天的各种编程讨论中经常出现，Vue3官网在深入响应式系统一节中对它的解释如下：
-
-
-
-响应性是一种可以使我们声明式地处理变化的编程范式。...</p>
-        </a>
-      
-      
-        <a class='next' href='/2023/05/03/Vue-nextTick/'>
-          <p class='title'>Vue中的$nextTick有什么作用？<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>首先明确一个事实：Vue在更新DOM时是异步执行的。Vue官网在深入响应式原理一节中是这么描述异步更新队列的：
-
-当侦听到数据变化，Vue将开启一个队列，并缓冲在同一事件循环中发生的所有数据变更...</p>
-        </a>
-      
-    </div>
-  
-  <!-- Custom Files postEnd begin-->
-  
-  <!-- Custom Files postEnd end-->
-</article>
-
-
   
 
 
-  <article class="post white-box shadow floatable blur" id="comments">
-    <span hidden>
-      <meta itemprop="discussionUrl" content="/2023/05/03/JavaScript-runtime-and-event-loop/index.html#comments">
-    </span>
-    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
-    
-
-    <div id="layoutHelper-comments"></div>
-
-  </article>
-
-
-
-
-
-
+	
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2811,48 +2522,134 @@ JavaScript运行时维护了一组代理，每个代理包括：
     
     
       
+<section class="widget blogger desktop mobile pjax">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box circle' href='/about/'>
+          <img no-lazy src='https://raw.githubusercontent.com/xyw-m/imgForPicGo/main/202305031010515.jpg'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+        
+          <p>生活需要长远的清醒。</p>
+
+        
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fa-solid fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="/1043545633@qq.com"
+              class="social fa-solid fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com/xyw-m"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="/"
+              class="social fa-solid fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
     
   
 
-
-<div class="widget-sticky pjax">
-
   
+    
+    
+      
   
-
-
-  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+  <section class="widget category desktop pjax">
     
   <header>
     
-      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
     
   </header>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%B8%BA%E4%BB%80%E4%B9%88JavaScript%E6%98%AF%E5%8D%95%E7%BA%BF%E7%A8%8B%EF%BC%9F"><span class="toc-text">1.为什么JavaScript是单线程？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-JavaScript%E8%BF%90%E8%A1%8C%E6%97%B6"><span class="toc-text">2.JavaScript运行时</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#JavaScript%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87-execution-context"><span class="toc-text">JavaScript执行上下文(execution context)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E6%A0%88"><span class="toc-text">执行上下文栈</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JavaScript%E8%BF%90%E8%A1%8C%E6%97%B6"><span class="toc-text">JavaScript运行时</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF-Event-Loop"><span class="toc-text">3.事件循环(Event Loop)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%8F%E4%BB%BB%E5%8A%A1vs%E5%BE%AE%E4%BB%BB%E5%8A%A1"><span class="toc-text">宏任务vs微任务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF%E6%AD%A5%E9%AA%A4"><span class="toc-text">事件循环步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%A5%E4%B8%80%E9%81%93%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8A%A0%E6%B7%B1%E7%90%86%E8%A7%A3"><span class="toc-text">来一道面试题加深理解</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-NodeJS%E4%B8%AD%E7%9A%84process-nextTick"><span class="toc-text">4.NodeJS中的process.nextTick</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-text">参考资料</span></a></li></ol>
+      <ul class="entry navigation">
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%89%8D%E7%AB%AF/" href="/categories/%E5%89%8D%E7%AB%AF/"
+            active-action="action-categoriesE5898DE7ABAF"
+            ><div class='name'>前端</div><div class='badge'>(4)</div></a></li>
+        
+      </ul>
     </div>
   </section>
 
+
+    
   
+
+  
+    
+    
+      
+  
+  <section class="widget tagcloud desktop mobile pjax">
+    
+  <header>
+    
+      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <a href="/tags/JavaScript/" style="font-size: 14px; color: #999">JavaScript</a> <a href="/tags/Vue/" style="font-size: 14px; color: #999">Vue</a>
+    </div>
+  </section>
+
+
+    
+  
+
+  
+
+
+<div class="widget-sticky pjax">
 
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2880,14 +2677,13 @@ JavaScript运行时维护了一组代理，每个代理包括：
 </aside>
 
 
-
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=true;
+  pdata.ispage=false;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3401,7 +3197,7 @@ JavaScript运行时维护了一组代理，每个代理包括：
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"xyw的小站","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"xyw的个人技术博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"xyw的小站"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/前端/","name":"前端"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/05/03/JavaScript-runtime-and-event-loop/","name":"JavaScript运行时及事件循环"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"xyw的小站","url":"http://example.com/","keywords":null,"description":"xyw的个人技术博客","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"xyw的个人技术博客"},"publisher":{"@type":"Organization","name":"xyw的小站","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"JavaScript运行时及事件循环","description":"先放个人总结，下文会详细解释：\nJavaScript运行时维护了一组代理，每个代理包括：\n一组执行上下文集合、执行上下文栈、主线程、worker额外线程、(宏)任务队列、微任务队列。\n每个代理由事件循环驱动：\n\n在一轮事件循环中，依次执行任务队列中的每一个任务，创建对应的执行上下文，压入执行栈执行。\n期间如果遇到微任务，只将其添加到微任务队列，然后继续执行任务队列中的任务。\n当任务队列中的任务执行完毕，执行栈为空时，依次执行微任务队列中的每一个微任务，直到微任务队列为空，允许微任务添加微任务。\n当所有微任务都被执行完毕后，本轮事件循环结束。\n下一轮事件循环开启，循环往复。\n","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/05/03/JavaScript-runtime-and-event-loop/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"xyw的小站","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/05/03/JavaScript-runtime-and-event-loop/","wordCount":290,"datePublished":"2023-05-03T08:22:25.000Z","dateModified":"2023-09-12T07:18:47.419Z","articleSection":"前端","keywords":"JavaScript","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"xyw的小站","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"xyw的个人技术博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"xyw的小站"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/archives/2023/","name":"2023"}},{"@type":"ListItem","position":4,"item":{"@id":"http://example.com/archives/2023/4/","name":"4"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"xyw的小站","url":"http://example.com/","keywords":null,"description":"xyw的个人技术博客","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"xyw的个人技术博客"},"publisher":{"@type":"Organization","name":"xyw的小站","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"xyw的个人技术博客","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"xyw的小站","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
